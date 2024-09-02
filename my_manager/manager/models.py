@@ -31,3 +31,17 @@ class JobOpportunities(models.Model):
         verbose_name = "Job Opportunity"
         verbose_name_plural = "Job Opportunities"
     
+class MyProjects(models.Model):
+    name = models.CharField('Project name', max_length=500)
+    languages = models.CharField('Languages that you will use', max_length=500)
+    time = models.DateField('Duration')
+    description = models.TextField('Brief description', max_length=1000, blank=True)
+    kind = models.CharField('Kind of your project', max_length=500, blank=True)
+
+    class Meta:
+        verbose_name = "My Project"
+        verbose_name_plural = "My Projects"
+
+
+
+
