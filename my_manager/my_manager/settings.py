@@ -42,17 +42,31 @@ INSTALLED_APPS = [
 ]
 
 JAZZMIN_SETTINGS = {
-    "site_title": "My Admin",
-    "site_header": "My Project",
-    "welcome_sign": "Welcome to My Project Admin",
+    "site_title": "Django manager",
+    "site_header": "Django manager",
+    # "site_logo": "images/logo.png", 
+    "welcome_sign": "Welcome to Django password manager",
     
-    # Theme Colors
-    "primary_color": "#4CAF50",  # Green (example)
-    "secondary_color": "#FFC107",  # Amber (example)
+    "theme": "lux",  
+    "dark_mode_theme": "cyborg",  
     
-    # Additional customizations
-    "dark_mode_theme": "darkly",  # Optional: Dark mode theme
-    "custom_css": None,  # You can provide a path to your custom CSS file if needed
+    "topmenu_links": [
+        {"name": "Home",  "url": "admin:index", "permissions": ["auth.view_user"]},
+    ],
+
+    "usermenu_links": [
+        {"name": "Support", "url": "https://support.mysite.com", "new_window": True},
+    ],
+
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+    },
+
+    "order_with_respect_to": ["auth", "myapp"], 
+    "custom_css": None, 
+    "custom_js": None,  
 }
 
 MIDDLEWARE = [
