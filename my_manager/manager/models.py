@@ -45,16 +45,17 @@ class MyProjects(models.Model):
 
 
 # Created a programming language selection 
+'''
+class Language(models.Model):
+    name = models.CharField(max_length=50)
 
-# class Language(models.Model):
-#     name = models.CharField(max_length=50)
+    def __str__(self):
+        return self.name
 
-#     def __str__(self):
-#         return self.name
+class YourModel(models.Model):
+    primary_language = models.ForeignKey(Language, related_name='primary_language', on_delete=models.CASCADE)
+    additional_languages = models.ManyToManyField(Language, related_name='additional_languages', blank=True)
 
-# class YourModel(models.Model):
-#     primary_language = models.ForeignKey(Language, related_name='primary_language', on_delete=models.CASCADE)
-#     additional_languages = models.ManyToManyField(Language, related_name='additional_languages', blank=True)
-
-#     def __str__(self):
-#         return f"Primary: {self.primary_language.name}, Additional: {[lang.name for lang in self.additional_languages.all()]}"
+    def __str__(self):
+        return f"Primary: {self.primary_language.name}, Additional: {[lang.name for lang in self.additional_languages.all()]}"
+'''
