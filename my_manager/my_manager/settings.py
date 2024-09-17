@@ -58,35 +58,36 @@ JAZZMIN_SETTINGS = {
 JAZZMIN_UI_TWEAKS = {
     "navbar_small_text": False,
     "footer_small_text": False,
-    "body_small_text": True,
+    "body_small_text": False,  
     "brand_small_text": False,
     "brand_colour": "navbar-dark",
-    "accent": "accent-primary",
+    "accent": "accent-info", #color of main text
     "navbar": "navbar-dark",
     "no_navbar_border": False,
     "navbar_fixed": True,
-    "layout_boxed": False,
+    "layout_boxed": False, #margin from border
     "footer_fixed": False,
     "sidebar_fixed": True,
-    "sidebar": "sidebar-dark-info",
+    "sidebar": "sidebar-dark-primary", 
     "sidebar_nav_small_text": False,
     "sidebar_disable_expand": False,
     "sidebar_nav_child_indent": True,
     "sidebar_nav_compact_style": True,
-    "sidebar_nav_legacy_style": True,
-    "sidebar_nav_flat_style": True,
-    "theme": "cyborg",
-    "dark_mode_theme": None,
+    "sidebar_nav_legacy_style": False,  # More modern sidebar style
+    "sidebar_nav_flat_style": False,  # Disable flat style for better visibility
+    "theme": "cyborg",  # Dark theme
+    "dark_mode_theme": None,  # No light mode option
     "button_classes": {
-        "primary": "btn-primary",
-        "secondary": "btn-secondary",
+        "primary": "btn-primary",  # Filled primary button
+        "secondary": "btn-outline-secondary",
         "info": "btn-outline-info",
         "warning": "btn-outline-warning",
         "danger": "btn-outline-danger",
         "success": "btn-outline-success"
     },
-    "actions_sticky_top": False
+    "actions_sticky_top": True  # Keep action buttons sticky at the top
 }
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
