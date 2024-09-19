@@ -76,7 +76,7 @@ JAZZMIN_UI_TWEAKS = {
     "sidebar_nav_legacy_style": False,  # More modern sidebar style
     "sidebar_nav_flat_style": False,  # Disable flat style for better visibility
     "theme": "cyborg",  # Dark theme
-    "dark_mode_theme": None,  # No light mode option
+    "dark_mode_theme": "superhero",  # No light mode option
     "button_classes": {
         "primary": "btn-primary",  # Filled primary button
         "secondary": "btn-outline-secondary",
