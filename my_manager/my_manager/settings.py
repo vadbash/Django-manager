@@ -44,17 +44,40 @@ INSTALLED_APPS = [
 JAZZMIN_SETTINGS = {
     "site_title": "Django manager",
     "site_header": "Django manager",
+    "site_brand": "Django manager",
     # "site_logo": "images/logo.png", 
     "welcome_sign": "Welcome to Django password manager",
+    "copyright": "vadbash",
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "users.User": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        "admin.LogEntry": "fas fa-file",
+        "manager.Passwords": "fas fa-key",            
+        "manager.CryptoWallets": "fas fa-wallet",     
+        "manager.JobOpportunities": "fas fa-briefcase", 
+        "manager.MyProjects": "fas fa-folder-open",  
+    },
+    "related_modal_active": False,
 }
-'''
-JAZZMIN_SETTINGS = {
+
+'''JAZZMIN_SETTINGS = {
     "order_with_respect_to": ["financial_statements", "courses", "client_support", "support"],
     "related_modal_active": True,
     "show_ui_builder": False,
     "changeform_format": "horizontal_tabs",
-}
-'''
+     "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "users.User": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        "admin.LogEntry": "fas fa-file",
+    },
+}'''
+
 JAZZMIN_UI_TWEAKS = {
     "navbar_small_text": False,
     "footer_small_text": False,
