@@ -30,7 +30,7 @@ While Django includes the default `objects` manager for each model, **Django-man
 
 1.  Clone the repo:
     
-    `git clone https://github.com/vadbash/Health-tgbot-ai.git` 
+    `git clone https://github.com/vadbash/Django-manager` 
     
 2.  Create a virtual environment and install dependencies:
     
